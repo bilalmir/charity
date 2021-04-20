@@ -67,7 +67,7 @@
                     </li>
                     <li>
                         <!--<a href="#contactarea">Contact</a>-->
-                        <a class="donation" href="Donate.html" target="_blank">Donate Now</a>
+                        <a class="donation" data-toggle="modal" data-target="#donate">Donate Now</a>
                     </li>
                 </ul>
             </nav>
@@ -89,10 +89,43 @@
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <div class="herotext bottom0">
+                        <h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                            Donate in world and benefit in Hereafter!
+                        </h1>
+                        <p class="text-center">
+                            <a class="donation btn btn-lg" style="padding-top:20px !important; padding-bottom:20px !important;font-size:20px!important" data-toggle="modal" data-target="#donate">Donate Now</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="bottom0">&nbsp;</span>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="donate" tabindex="-1" aria-labelledby="donate" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                    <h5 class="alert-info">Donate to Ehsaas-e-Insaniyat</h5>
+                </div>
+                <div class="modal-body">
+                    <span class="alert-success">May Allah reward you for this donation in Hereafter</span>
+                </div>
+                <div class="modal-footer">
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H0ORDjqyHQahZU" async></script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- About
         ================================================== -->
     <section id="about" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/1.jpg);">
